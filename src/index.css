@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Aller';
+    src: url('./assets/fonts/Aller_Std_Rg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Aller';
+    src: url('./assets/fonts/Aller_Std_Bd.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Aller';
+    src: url('./assets/fonts/Aller_Std_BdIt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Aller';
+    src: url('./assets/fonts/Aller_Std_It.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Aller';
+    src: url('./assets/fonts/Aller_Std_Lt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Aller';
+    src: url('./assets/fonts/Aller_Std_LtIt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'AllerDisplay';
+    src: url('./assets/fonts/AllerDisplay_Std_Rg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  

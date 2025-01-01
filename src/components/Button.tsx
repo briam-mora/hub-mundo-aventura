@@ -1,13 +1,14 @@
 import React from 'react';
 
 type ButtonProps = {
-    label: string;
+    id: string;
+    label?: string;
     onClick?: () => void;
 };
 
-const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
+const Button: React.FC<ButtonProps> = ({ id,label, onClick }) => {
     return (
-      <button className="button" onClick={ onClick }>
+      <button id={id} className="button" onClick={ onClick }>
           { label }
       </button>
   );

@@ -16,18 +16,19 @@ const MainLayout: React.FC = () => {
       setVh();
       window.addEventListener('resize', setVh);
     }, [])
+    
 
     return (
         <div className="main-layout">
             <Header />
             <div className="button-container">
-                <Button label="Sticker Animado" onClick={ () => window.open("https://festivaldelaluz.8thwall.app/stickers-animados/", "_self") } />
-                <Button label="Filtro Abeja" onClick={ () => window.open("https://festivaldelaluz.8thwall.app/filtro-abeja/", "_self") } />
-                <Button label="Mundo Sostenible" onClick={ () => window.open("https://festivaldelaluz.8thwall.app/ciudad-sostenible/", "_self") } />
+                <Button id="button-one" label="" onClick={ () => window.open("https://festivaldelaluz.8thwall.app/stickers-animados/", "_self") } />
+                <Button id="button-two" label="" onClick={ () => window.open("https://festivaldelaluz.8thwall.app/filtro-abeja/", "_self") } />
+                <Button id="button-three" label="" onClick={ () => window.open("https://festivaldelaluz.8thwall.app/ciudad-sostenible/", "_self") } />
             </div>
             <div className="footer">
-                <p>Una experiencia de</p>
-                <Logo src='https://res.cloudinary.com/glovooker/image/upload/v1733498838/carroza/Logo-Gradiente.png' alt='Logo Universidad Cenfotec' />
+                <Logo src='src/assets/images/museo_de_los_niños.svg' alt = 'Logo del Museo de los Niños' />
+                <Logo src='src/assets/images/cenfotec.svg' alt='Logo Universidad Cenfotec' />
             </div>
         </div>
     );

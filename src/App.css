@@ -34,22 +34,60 @@ body {
   width: 100vw;
   height: 100vh;
   background-image: url('./assets/images/bg.png');
-  background-size: cover;
+  background-size: contain;
 }
 
 /* ------------------------------------
    Header section
 ------------------------------------- */
 .header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  position: relative; /* Necesario para usar posicionamiento absoluto dentro */
   width: 100%;
   height: 19.5vh;
   background-image: url('./assets/images/header.svg');
   background-size: 150%;
-  background-position: 50% 100%;
+  background-position: 50% 97%;
 }
+
+.header .logo {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.io-btn-container {
+  top: 32%;
+  height: 25%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 66%;
+  z-index: 2;
+}
+
+/* ------------------------------------
+   Div section
+------------------------------------- */
+.info-container{
+  margin-top: 3vh;
+  height: 6.5vh;
+  width: 80%;
+  background-color: #2d444b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.info-container p{
+  color: #ffffffff;
+  font-family: 'Aller';
+  font-size: 80%;
+}
+
 
 /* ------------------------------------
    Button container
@@ -58,7 +96,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 69.9vh;
+  height: 60.4vh;
   align-items: center;
   justify-content: space-evenly;
   z-index: 100;
@@ -90,11 +128,17 @@ body {
    Specific buttons (different images)
 ------------------------------------- */
 #mute-btn {
-  height: 25%;
-  width: 15%;
-  margin-left: 26%;
+  aspect-ratio: 1;
+  height: 100%;
+  width: auto;
   background-image: url('./assets/images/soundon.png');
-  z-index: 300;
+}
+
+#back-btn {
+  aspect-ratio: 1;
+  height: 100%;
+  width: auto;
+  background-image: url('./assets/images/back.png');
 }
 
 #button-one {
@@ -118,33 +162,48 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: left;
-  text-align: center;
-  font-size: 14px;
-  color: #2B4F72;
+  justify-content: center;
   background-image: url('assets/images/footer.svg');
   background-size: cover;
   background-position: 0% 12%;
-  padding-left: 10%;
-  padding-top: 4.5%;
 }
 
-.footer div {
-  height: 4vh;
+.footer-contents {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10%;
 }
 
 /* ------------------------------------
-   Logo inside footer
+   Logo
 ------------------------------------- */
 .logo {
-  width: auto;
   height: 90%;
-  max-width: 150px;
+  width: auto;
   z-index: 200;
-  margin-left: 15.6%;
 }
 
 .logo img {
   height: 100%;
   width: auto;
+}
+
+
+/* Estilos para resoluciones bajas */
+@media (min-width: 400px) {
+  .io-btn-container {
+    gap: 260px; /* Ajustar el valor de gap para resoluciones bajas */
+    height: 30%;
+  }
+
+  .footer-contents {
+    height: 70%;
+  }
+
+  .info-container{
+    width: 30vw;
+  }
 }

@@ -25,9 +25,9 @@ const MainLayout: React.FC = () => {
                 <p>Diviértete completando las 3 actividades</p>
             </div>
             <div className="button-container">
-                <Button id="button-one" label="" onClick={ () => window.open("https://festivaldelaluz.8thwall.app/stickers-animados/", "_self") } />
-                <Button id="button-two" label="" onClick={ () => window.open("https://festivaldelaluz.8thwall.app/filtro-abeja/", "_self") } />
-                <Button id="button-three" label="" onClick={ () => window.open("https://festivaldelaluz.8thwall.app/ciudad-sostenible/", "_self") } />
+                <Button id="button-one" label="" onClick={ () => window.open("https://festivaldelaluz.8thwall.app/busqueda-mundo-aventura/", "_self") } />
+                <Button id="button-two" label="" onClick={ () => window.open("https://festivaldelaluz.8thwall.app/mascara-mundo-aventura/", "_self") } />
+                <Button id="button-three" label="" onClick={ () => window.open("https://festivaldelaluz.8thwall.app/espacio-mundo-aventura/", "_self") } />
             </div>
             <Footer/>
         </div>

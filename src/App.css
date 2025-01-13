@@ -144,15 +144,15 @@ body {
 }
 
 #button-one {
-  background-image: url('./assets/images/boton1.png');
+  background-image: url('./assets/images/mundo_aventura_1.png');
 }
 
 #button-two {
-  background-image: url('./assets/images/boton2.png');
+  background-image: url('./assets/images/mundo_aventura_2.png');
 }
 
 #button-three {
-  background-image: url('./assets/images/boton3.png');
+  background-image: url('./assets/images/mundo_aventura_3.png');
 }
 
 /* ------------------------------------
